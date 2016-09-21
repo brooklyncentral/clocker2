@@ -12,17 +12,17 @@ Clocker 2 for [Apache Brooklyn](https://brooklyn.apache.org/) is a set of open s
 
 ## What can you do with it?
 
-* You can easily deploy production grade Docker Swarms or Kubernetes clusters to a [range of clouds](http://brooklyn.apache.org/v/latest/ops/locations/index.html).
+* You can easily deploy production grade Docker Swarms or Kubernetes clusters to a [range of clouds](http://brooklyn.apache.org/v/latest/ops/locations/index.html) (including [AWS](https://aws.amazon.com/), [Azure](https://azure.microsoft.com), [Google Cloud](https://cloud.google.com/), [IBM Softlayer](http://www.softlayer.com/), and [IBM BlueBox](https://www.blueboxcloud.com/).
 * You can manage and scale Swarms or clusters in real time. 
 
 ## Getting started
-Firstly, you need to have [Apache Brooklyn installed](https://brooklyn.apache.org/v/latest/start/running.html). Once this is done, [download the `clocker2-common.bom` file](c  locker2-common.bom). This file contains all required entities to run a Docker Swarm cluster. You need to add this file to your Brooklyn catalog. You can achieve this by either drag-and-dropping the file into the YAML editor (composer tab of the Brooklyn UI) or by using the [Brooklyn CLI](https://brooklyn.apache.org/v/latest/ops/cli/index.html) as follow:
+
+1. Firstly, you need to have Apache Brooklyn installed and running, if you have not already done this, please [follow these instructions](https://brooklyn.apache.org/v/latest/start/running.html).
+2. Once this is done, [download the `clocker2-common.bom` file](clocker2-common.bom). This file contains all required entities to run a Docker Swarm cluster. You need to add this file to your [Brooklyn catalog](http://brooklyn.apache.org/v/latest/ops/catalog/index.html). You can achieve this by either drag-and-dropping the file into the YAML editor (composer tab of the Brooklyn UI) or by using the [Brooklyn CLI](https://brooklyn.apache.org/v/latest/ops/cli/index.html) as follows:
 
     br add-catalog clocker2-common.bom
 
-Then you need to [setup a location](https://brooklyn.apache.org/v/latest/ops/locations/index.html) to deploy your Docker Swarm cluster. We came up with location's templates to add to your catalog, that you can use out of the box for [AWS](tutorial/locations/aws-example-location.bom), [SoftLayer]((tutorial/locations/sl-example-location.bom)), [Azure](tutorial/locations/azure-example-location.bom), [GCE](tutorial/locations/gce-example-location.bom) and [Blue Box](tutorial/locations/bb-example-location.bom). You can find more information about what is going on in those files [here](tutorial/swarmCluster.html#setup-a-cloud-location).
 
-Now you are all set. The last thing to do is to deploy your Docker Swarm cluster. You can use this [yaml](examples/swarm.yaml){:target="blank"} to getting started:
-{% highlight YAML %}
-{% include_relative examples/swarm.yaml %}
-{% endhighlight %}
+3. You will then need to [setup a location](https://brooklyn.apache.org/v/latest/ops/locations/index.html) to which you will deploy your Docker Swarm cluster. We came up with location's templates to add to your catalog, that you can use out of the box for [AWS](tutorial/locations/aws-example-location.bom), [SoftLayer]((tutorial/locations/sl-example-location.bom)), [Azure](tutorial/locations/azure-example-location.bom), [GCE](tutorial/locations/gce-example-location.bom) and [Blue Box](tutorial/locations/bb-example-location.bom). You can find more information about what is going on in those files [here](tutorial/swarmCluster.html#setup-a-cloud-location).
+
+4. You should now be all set. The last thing to do is to deploy your Docker Swarm cluster. This should be available as an application in the 'Create Application' dialog or you can use our [yaml examples](examples/swarm.yaml){:target="blank"} to get started.
