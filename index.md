@@ -7,11 +7,13 @@ children:
 ---
 
 ## What is it?
-The Docker Swarm cluster for Clocker 2 is a set of YAML blueprints designed to make Docker more accessible to deploy application from [Apache Brooklyn](https://brooklyn.apache.org/).
+
+Clocker 2 for [Apache Brooklyn](https://brooklyn.apache.org/) is a set of open source, [Apache Licensed](https://www.apache.org/licenses/LICENSE-2.0) tools designed to make working with [Docker](https://www.docker.com/) containers as simple as a few clicks. Clocker 2 contains [Brooklyn blueprints](http://brooklyn.apache.org/v/latest/start/blueprints.html) to enable deployment and management of [Docker Swarms](https://www.docker.com/products/docker-swarm) and [Kubernetes clusters](http://kubernetes.io/).
 
 ## What can you do with it?
-* You can easily create and manage a production grade Docker Swarm cluster.
-* It allows you to deploy your apps to Docker Swarm clusters, allowing you to seamlessly blend Docker with more traditional deployments.
+
+* You can easily deploy production grade Docker Swarms or Kubernetes clusters to a [range of clouds](http://brooklyn.apache.org/v/latest/ops/locations/index.html).
+* You can manage and scale Swarms or clusters in real time. 
 
 ## Getting started
 Firstly, you need to have [Apache Brooklyn installed](https://brooklyn.apache.org/v/latest/start/running.html). Once this is done, [download the `clocker2-common.bom` file](c  locker2-common.bom). This file contains all required entities to run a Docker Swarm cluster. You need to add this file to your Brooklyn catalog. You can achieve this by either drag-and-dropping the file into the YAML editor (composer tab of the Brooklyn UI) or by using the [Brooklyn CLI](https://brooklyn.apache.org/v/latest/ops/cli/index.html) as follow:
