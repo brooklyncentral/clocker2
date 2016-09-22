@@ -8,7 +8,7 @@ This tutorial is focused on deploying apps to a Swarm cluster. Please note, this
 
 ### Pre-requisites
 
-This tutorial assumes you have [installed](/tutorials/tutorial-get-amp-running.html) Cloudsoft AMP, and the AMP CLI.  It also assumes you have followed the [steps](swarm-cluster.html) to get a swarm cluster running.
+This tutorial assumes you have [installed](https://brooklyn.apache.org/v/latest/start/running.html) Apache Brooklyn, and the [Apache Brooklyn CLI](https://brooklyn.apache.org/v/latest/ops/cli/index.html). It also assumes you have followed the [steps](swarm-cluster.html) to get a swarm cluster running.
 
 ### Instructions
 
@@ -19,7 +19,7 @@ To deploy to a swarm cluster we must represent the cluster as an AMP location. W
 {% include_relative locations/swarm-example-location.bom %}
 {% endhighlight %}
 
-The hostname and port can be retrieved from the `swarm.endpoint` sensor on the swarm entity.  The following command will retrieve this info:
+The hostname and port can be retrieved from the `swarm.endpoint` sensor on the swarm entity. The following command will retrieve this info:
 
     br app swarm entity swarm-manager-load-balancer sensor swarm.endpoint
 
@@ -31,7 +31,7 @@ Once you have added these values to the bom file you can add it to you catalog w
 
 #### Deploying to our swarm cluster
 
-The location we just created can be used, as you would use any other cloud location.  The [yaml](multi-node-application.bom){:target="blank"} below deploys a three tier web app to your swarm location.
+The location we just created can be used, as you would use any other cloud location. The [yaml](multi-node-application.bom){:target="blank"} below deploys a three tier web app to your swarm location.
 
 {% highlight YAML %}
 {% include_relative multi-node-application.bom %}
@@ -45,4 +45,4 @@ Once it has been deployed you can get the publicly available endpoint using the 
 
     br app "3-Tier web app on swarm" entity "Load Balancer (nginx)" sensor main.uri.mapped.public
 
-If you inspect the above yaml it is similar to the yaml discussed in previous tutorials e.g. [Policy Tutorial](/tutorials/policies_intro.html) except we have included a separate mysql database.  The main difference is the use of the `OnPublicNetworkEnricher`.  We use this to indicate to AMP any ports that need to be available outside the swarm network.  In this case we are making the load balancer available so that we can use our deployed app.  We might also use this if we were deploying an application on a mix of containers and virtual machines.
+If you inspect the above yaml it is similar to the yaml discussed in previous tutorials e.g. [Policy Tutorial](/tutorials/policies_intro.html) except we have included a separate mysql database. The main difference is the use of the `OnPublicNetworkEnricher`. We use this to indicate to AMP any ports that need to be available outside the swarm network.  In this case we are making the load balancer available so that we can use our deployed app. We might also use this if we were deploying an application on a mix of containers and virtual machines.

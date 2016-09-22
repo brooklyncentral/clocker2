@@ -11,7 +11,7 @@ The production ready swarm cluster is comprised of the following components:
 
 ### Pre-requisites
 
-This tutorial assumes you have [installed](./tutorial-get-amp-running.html) Cloudsoft AMP, and the AMP CLI.
+This tutorial assumes you have [installed](https://brooklyn.apache.org/v/latest/start/running.html) Apache Brooklyn, and the [Apache Brooklyn CLI](https://brooklyn.apache.org/v/latest/ops/cli/index.html).
 
 #### A load-balanced cluster of swarm managers
 Swarm managers control a swarm's nodes and dictate the node on which containers are deployed.
@@ -33,7 +33,7 @@ This is used to provide TLS certificates for the swarm cluster. This component i
 #### Setup a cloud location
 Firstly, we need to setup a location to deploy the Swarm cluster to.  We recommend the following settings:
 
-- use the `installDevUrandom` config to prevent installation speed being slowed by lack of entropy. See [Entropy Troubleshooting](/operations/troubleshooting/increase-entropy.html)
+- use the `installDevUrandom` config to prevent installation speed being slowed by lack of entropy. See [Entropy Troubleshooting](https://brooklyn.apache.org/documentation/increase-entropy.html)
 - use at least 2GB RAM
 - use a CentOS 7 based image
 
