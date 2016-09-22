@@ -14,7 +14,7 @@ Clocker 2 currently supports 2 types of clusters:
 
 TODO
 
-Please check [this page](swarm_cluster_features.html) for more information about Docker Swarms blueprint's options. 
+Please check [this page](swarm-cluster-features.html) for more information about Docker Swarms blueprint's options. 
 
 ### Kubernetes cluster
 

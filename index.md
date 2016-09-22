@@ -20,7 +20,7 @@ Clocker 2 for [Apache Brooklyn](https://brooklyn.apache.org/) is a set of open s
    ```sh
    br add-catalog clocker.bom
    ```
-3. You will then need to [setup a location](https://brooklyn.apache.org/v/latest/ops/locations/index.html) to which you will deploy these entities. We came up with location's templates to add to your catalog, that you can use out of the box for [AWS](tutorial/locations/aws-example-location.bom), [SoftLayer]((tutorial/locations/sl-example-location.bom)), [Azure](tutorial/locations/azure-example-location.bom), [GCE](tutorial/locations/gce-example-location.bom) and [Blue Box](tutorial/locations/bb-example-location.bom). You can find more information about what is going on in those files [here](tutorial/swarmCluster.html#setup-a-cloud-location).
+3. You will then need to [setup a location](https://brooklyn.apache.org/v/latest/ops/locations/index.html) to which you will deploy these entities. We came up with location's templates to add to your catalog, that you can use out of the box for [AWS](tutorial/locations/aws-example-location.bom), [SoftLayer]((tutorial/locations/sl-example-location.bom)), [Azure](tutorial/locations/azure-example-location.bom), [GCE](tutorial/locations/gce-example-location.bom) and [Blue Box](tutorial/locations/bb-example-location.bom). You can find more information about what is going on in those files [here](tutorial/swarm-cluster.html#setup-a-cloud-location).
 4. Job done, you should now be all set!
 
 The last thing to do is to deploy one (or more) of the new entities. They should be available as an application in the 'Create Application' dialog or you can use our [yaml examples](examples/swarm.yaml){:target="blank"} to get started.

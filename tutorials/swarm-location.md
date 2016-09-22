@@ -4,11 +4,11 @@ title: Swarm Location Tutorial
 ---
 
 ### Introduction
-This tutorial is focused on deploying apps to a Swarm cluster. Please note, this can be any swarm cluster, not just a cluster provisioned by AMP. However for the purpose of this tutorial we will assume that you provisioned the cluster using the approach described in the [Swarm Cluster Tutorial](swarmCluster.html)
+This tutorial is focused on deploying apps to a Swarm cluster. Please note, this can be any swarm cluster, not just a cluster provisioned by AMP. However for the purpose of this tutorial we will assume that you provisioned the cluster using the approach described in the [Swarm Cluster Tutorial](swarm-cluster.html)
 
 ### Pre-requisites
 
-This tutorial assumes you have [installed](/tutorials/tutorial-get-amp-running.html) Cloudsoft AMP, and the AMP CLI.  It also assumes you have followed the [steps](swarmCluster.html) to get a swarm cluster running.
+This tutorial assumes you have [installed](/tutorials/tutorial-get-amp-running.html) Cloudsoft AMP, and the AMP CLI.  It also assumes you have followed the [steps](swarm-cluster.html) to get a swarm cluster running.
 
 ### Instructions
 
@@ -23,7 +23,7 @@ The hostname and port can be retrieved from the `swarm.endpoint` sensor on the s
 
     br app swarm entity swarm-manager-load-balancer sensor swarm.endpoint
 
-You should use the cert.pem and key.pem created in the [Swarm Cluster Tutorial](swarmCluster.html).
+You should use the cert.pem and key.pem created in the [Swarm Cluster Tutorial](swarm-cluster.html).
 
 Once you have added these values to the bom file you can add it to you catalog with this command:
 
