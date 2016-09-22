@@ -367,10 +367,19 @@ footer {
         display: inline;
     }
 
-    header ul {
+    header ul.github {
         position: absolute;
         right: 40px;
         top: 40px;
+    }
+
+    header ul.menu {
+        overflow: hidden;
+        margin: 0;
+    }
+    header ul.menu li {
+        float: left;
+        margin-right: 10px;
     }
 }
 
@@ -380,7 +389,7 @@ footer {
     }
 
     header {
-        padding: 20px 20px 0;
+        padding: 20px 205px 0 20px;
     }
 
     section {
@@ -398,6 +407,9 @@ footer {
 
 @media print, screen and (max-width: 480px) {
 
+    header {
+        padding-right: 20px;
+    }
     header ul li.download {
         display: none;
     }
