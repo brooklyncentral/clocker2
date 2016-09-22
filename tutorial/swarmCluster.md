@@ -1,5 +1,5 @@
 ---
-layout: website-normal
+layout: base
 title: Swarm Cluster Tutorial
 ---
 

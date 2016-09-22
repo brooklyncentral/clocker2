@@ -1,5 +1,5 @@
 ---
-layout: website-normal
+layout: base
 title: Swarm Location Tutorial
 ---
 
@@ -46,4 +46,3 @@ Once it has been deployed you can get the publicly available endpoint using the 
     br app "3-Tier web app on swarm" entity "Load Balancer (nginx)" sensor main.uri.mapped.public
 
 If you inspect the above yaml it is similar to the yaml discussed in previous tutorials e.g. [Policy Tutorial](/tutorials/policies_intro.html) except we have included a separate mysql database.  The main difference is the use of the `OnPublicNetworkEnricher`.  We use this to indicate to AMP any ports that need to be available outside the swarm network.  In this case we are making the load balancer available so that we can use our deployed app.  We might also use this if we were deploying an application on a mix of containers and virtual machines.
-

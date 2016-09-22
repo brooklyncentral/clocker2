@@ -1,6 +1,6 @@
 ---
-layout: website-normal
-title: Swarm cluster for Clocker 2
+layout: base
+title: Clocker 2 - The Docker Cloud Maker
 children:
 - swarm_cluster_features.md
 - tutorial/index.md
@@ -13,7 +13,7 @@ Clocker 2 for [Apache Brooklyn](https://brooklyn.apache.org/) is a set of open s
 ## What can you do with it?
 
 * You can easily deploy production grade Docker Swarms or Kubernetes clusters to a [range of clouds](http://brooklyn.apache.org/v/latest/ops/locations/index.html) (including [AWS](https://aws.amazon.com/), [Azure](https://azure.microsoft.com), [Google Cloud](https://cloud.google.com/), [IBM Softlayer](http://www.softlayer.com/), and [IBM BlueBox](https://www.blueboxcloud.com/).
-* You can manage and scale Swarms or clusters in real time. 
+* You can manage and scale Swarms or clusters in real time.
 
 ## Getting started
 

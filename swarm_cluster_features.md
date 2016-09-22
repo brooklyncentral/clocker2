@@ -1,5 +1,5 @@
 ---
-layout: website-normal
+layout: base
 title: Swarm Cluster Features
 ---
 
@@ -22,10 +22,3 @@ The Swarm cluster is automatically setup with an overlay network. This network c
 | Config Name          | Description                                                                                  |
 |----------------------|----------------------------------------------------------------------------------------------|
 | swarm.defaultnetwork | The ID of the default network to set. When deploying to this swarm, this network can be used |
-
-
-
-
-
-
-
