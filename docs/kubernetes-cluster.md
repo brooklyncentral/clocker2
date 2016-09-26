@@ -9,6 +9,8 @@ With Clocker 2, you can easily deploy and manage Kubernetes clusters. They are p
 Can also connect to existing infrastructure provisioned and managed externally, by specifying appropriate API endpoints.
 
 ### Architecture
+![Kubernetes cluster architecture]({{site.baseurl}}/assets/images/kubernetes-architecture.png)
+
 The Kubernetes entity that comes with clocker 2 will deploy and manage the following components:
 
 #### Kubernetes cluster
