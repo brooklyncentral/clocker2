@@ -4,14 +4,14 @@ title: Kubernetes Cluster Documentation
 ---
 
 ### Overview
-With Clocker 2, you can easily deploy and manage Kubernetes clusters. They are production-ready infrastructure with TLS, high-availability and extensions like Flannel, Calico and Canal for networking.
+With Clocker, you can easily deploy and manage Kubernetes clusters. They are production-ready infrastructure with TLS, high-availability and extensions like Flannel, Calico and Canal for networking.
 
 Can also connect to existing infrastructure provisioned and managed externally, by specifying appropriate API endpoints.
 
 ### Architecture
 ![Kubernetes cluster architecture]({{site.baseurl}}/assets/images/kubernetes-architecture.png)
 
-The Kubernetes entity that comes with clocker 2 will deploy and manage the following components:
+The Kubernetes entity that comes with Clocker will deploy and manage the following components:
 
 #### Kubernetes cluster
 This Kubernetes cluster contains a manager and a configurable number of workers.

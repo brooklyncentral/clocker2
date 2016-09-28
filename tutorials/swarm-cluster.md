@@ -100,4 +100,4 @@ export DOCKER_CERT_PATH=<CERT_DIR>
 You will now be able to run Docker commands against the Swarm cluster.
 
 ### What's next?
-Jump into the [documentation]({{site.baseurl}}/docs/swarm-cluster.html) to learn more about Docker Swarm support in Clocker 2 and have an in-depth overview.
+Jump into the [documentation]({{site.baseurl}}/docs/swarm-cluster.html) to learn more about Docker Swarm support in Clocker and have an in-depth overview.

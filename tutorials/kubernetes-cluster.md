@@ -85,4 +85,4 @@ After the location is setup, it is time to deploy a Kubernetes cluster. From you
 To interact with the Kubernetes cluster, log in into the Kubernetes Dashboard (URL will be available as "main uri" sensor into the brooklyn console)
 
 ### What's next?
-Jump into the [documentation]({{site.baseurl}}/docs/kubernetes-cluster.html) to learn more about kubernetes support in Clocker 2 and have an in-depth overview.
+Jump into the [documentation]({{site.baseurl}}/docs/kubernetes-cluster.html) to learn more about kubernetes support in Clocker and have an in-depth overview.

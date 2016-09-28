@@ -4,7 +4,7 @@ title: Documentation
 ---
 
 ## Overview
-Clocker 2 adds container support for Apache Brooklyn. It currently comes with various entities to be able to deploy to [Docker Swarms](https://docs.docker.com/swarm/){:target="blank"} and [Kubernetes clusters](http://kubernetes.io/){:target="blank"}
+Clocker adds container support for Apache Brooklyn. It currently comes with various entities to be able to deploy to [Docker Swarms](https://docs.docker.com/swarm/){:target="blank"} and [Kubernetes clusters](http://kubernetes.io/){:target="blank"}
 
 The way it works is as follow:
 
@@ -14,7 +14,7 @@ The way it works is as follow:
 In results, both container platforms and applications are deployed **and** managed into a central and common interface: *Brooklyn*.
 
 ## Entities available
-Check out our documentation for each entity that Clocker 2 supports:
+Check out our documentation for each entity that Clocker supports:
 
 * [Docker Swarm](swarm-cluster.html)
 * [Kubernetes cluster](kubernetes-cluster.html)

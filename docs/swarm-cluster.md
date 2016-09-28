@@ -4,7 +4,7 @@ title: Docker Swarm Documentation
 ---
 
 ### Overview
-With Clocker 2, you can easily deploy and manage Docker Swarm clusters. They are production-ready infrastructure with TLS, high-availability and extensions like Flannel, Calico and Canal for networking.
+With Clocker, you can easily deploy and manage Docker Swarm clusters. They are production-ready infrastructure with TLS, high-availability and extensions like Flannel, Calico and Canal for networking.
 
 Can also connect to existing infrastructure provisioned and managed externally, by specifying appropriate API endpoints.
 
@@ -13,7 +13,7 @@ You can containerize applications by simply deploying [Brooklyn blueprints](http
 ### Architecture
 ![Docker Swarm architecture]({{site.baseurl}}/assets/images/swarm-architecture.png)
 
-The Docker Swarm entity that comes with clocker 2 will deploy and manage the following components:
+The Docker Swarm entity that comes with Clocker will deploy and manage the following components:
 
 #### A load-balanced cluster of swarm managers
 Swarm managers control a swarm's nodes and dictate the node on which containers are deployed.

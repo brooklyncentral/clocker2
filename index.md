@@ -4,7 +4,7 @@ title: Home
 ---
 
 ## What is it?
-Clocker 2 for [Apache Brooklyn](https://brooklyn.apache.org/) is a set of open source, [Apache Licensed](https://www.apache.org/licenses/LICENSE-2.0) tools designed to make working with [Docker](https://www.docker.com/) containers as simple as a few clicks. Clocker 2 contains [Brooklyn blueprints](http://brooklyn.apache.org/v/latest/start/blueprints.html) to enable deployment and management of [Docker Swarms](https://www.docker.com/products/docker-swarm) and [Kubernetes clusters](http://kubernetes.io/).
+Clocker for [Apache Brooklyn](https://brooklyn.apache.org/) is a set of open source, [Apache Licensed](https://www.apache.org/licenses/LICENSE-2.0) tools designed to make working with [Docker](https://www.docker.com/) containers as simple as a few clicks. Clocker contains [Brooklyn blueprints](http://brooklyn.apache.org/v/latest/start/blueprints.html) to enable deployment and management of [Docker Swarms](https://www.docker.com/products/docker-swarm) and [Kubernetes clusters](http://kubernetes.io/).
 
 ## What can you do with it?
 
